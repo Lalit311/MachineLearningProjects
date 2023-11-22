@@ -31,8 +31,8 @@ def predict(model_path: str, predict_image_path: list) -> None:
 
 def run(data_path: str, epochs: int, image_size: int):
     # For model training & saving
-    # model = train(data_path, epochs, image_size)
-    # save(model)
+    model = train(data_path, epochs, image_size)
+    save(model)
     
     # For model prediction - use the latest trained model weights for model_path below
     image_prediction_list = [f'{TESTING_PATH}building.jpeg',
